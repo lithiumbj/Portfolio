@@ -144,6 +144,38 @@ h1 {
     fill: #000;
 }
 
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .section {
+        padding: 5px 20px;
+        width: calc(100% - 40px);
+    }
+
+    .arrow-down,
+    .arrow-up {
+        display: none;
+    }
+
+    .job-list {
+        width: 100%;
+    }
+
+    .section.section-1 {
+       height: 100vh;
+    }
+
+    .section.section-2 {
+        margin-bottom: 100px;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         color: rgb(var(--foreground-rgb));
