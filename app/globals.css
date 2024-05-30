@@ -1,33 +1,164 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    margin: 0px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    overflow-x: hidden;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.section-4 {
+    height: auto;
+    min-height: 100vh;
+}
+
+.row {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+}
+
+.col-6 {
+    display: flex;
+    width: 50%;
+}
+
+.col-6.centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.col-6.my-name {
+    align-items: center;
+}
+
+.text-v-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-v-center h2 {
+    margin-top: 0px;
+}
+
+.my-pic {
+    height: 250px;
+    border-radius: 100%;
+}
+
+h1 {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    padding: 20px 0px;
+}
+
+.job-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.job-list {
+    width: 60%
+}
+
+.job h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.job p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.job-separetor-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-separetor {
+    width: 1px;
+    background: #000;
+    display: flex;
+    height: 60px;
+    margin: 10px 0px
+}
+
+.arrow-up {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow-down {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.arrow-down svg,
+.arrow-up svg {
+    stroke: #000;
+    fill: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: rgb(var(--foreground-rgb));
+        background-color: #000000;
+        background-image: linear-gradient(62deg, #000000 0%, #2e3dac 100%);
+        overflow-x: hidden;
+    }
+
+    .job-separetor {
+        background: #fff;
+    }
+
+    .arrow-down svg,
+    .arrow-up svg {
+        stroke: #fff;
+        fill: #fff;
+    }
 }
