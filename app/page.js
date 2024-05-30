@@ -73,6 +73,73 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={"arrow-down"} onClick={() => {
+                    scrollTo(".section.section-3")
+                }}>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 384 512">
+                        <path
+                            d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                    </svg>
+                </div>
+            </div>
+
+
+            <div className={"section section-3"}>
+                <div className={"arrow-up"} onClick={() => {
+                    scrollTo(".section.section-2")
+                }}>
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 384 512">
+                        <path
+                            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/>
+                    </svg>
+                </div>
+                <div className={"about-me"}>
+                    <h2>Proyectos en los que he participado</h2>
+                    <div>
+                        <strong>Disclaimer:</strong> Algunos de mis proyectos están protegidos bajo NDA y por tanto no
+                        pueden ser divulgados o aquí expuestos, por lo que me veo obligado a publicar unicamente los
+                        proyectos que he realizado como autónomo / freelance:
+                    </div>
+                    <div className={"projects-container"}>
+                        <div className={"project"}>
+                            <div className={"inner-project"}>
+                                <div className={"project-picture"} style={{backgroundImage: "url('/assets/prj1.jpg')"}}></div>
+                                <h5 className={"project-name"}>Myox.fit APP</h5>
+                                <div className={"project-excerpt"}>
+                                    Aplicación Android, iOS y web enfocada a la salud y a la fisioterapia
+                                    <hr/>
+                                    <a href={"https://play.google.com/store/apps/details?id=fit.myox.app"} target={"_blank"}>Acceder al proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={"project"}>
+                            <div className={"inner-project"}>
+                                <div className={"project-picture"} style={{backgroundImage: "url('/assets/prj2.jpg')"}}></div>
+                                <h5 className={"project-name"}>Myox Institute</h5>
+                                <div className={"project-excerpt"}>
+                                    LMS en Aplicación Android, iOS y web enfocada
+                                    <hr/>
+                                    <a href={"https://play.google.com/store/apps/details?id=fit.myox.app"} target={"_blank"}>Acceder al proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={"project"}>
+                            <div className={"inner-project"}>
+                                <div className={"project-picture"} style={{backgroundImage: "url('/assets/prj3.jpg')"}}></div>
+                                <h5 className={"project-name"}>#eligesoria</h5>
+                                <div className={"project-excerpt"}>
+                                    Aplicación Android, iOS con información turística y audioguías
+                                    <hr/>
+                                    <a href={"https://play.google.com/store/apps/details?id=com.spk.eligesoria"} target={"_blank"}>Acceder al proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"arrow-down"} onClick={() => {
                     scrollTo(".section.section-4")
                 }}>
                     <svg xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +152,7 @@ export default function Home() {
 
             <div className={"section section-4"}>
                 <div className={"arrow-up"} onClick={() => {
-                    scrollTo(".section.section-2")
+                    scrollTo(".section.section-3")
                 }}>
                     <svg xmlns="http://www.w3.org/2000/svg"
                          viewBox="0 0 384 512">
@@ -101,125 +168,35 @@ export default function Home() {
                         probado suerte como freelance (autónomo) y como socio capitalista de una startup
                         <br/>
                         <br/>
-                        De todas formas mi trayectoria profesional se podría resumir así:
+                        Comencé oficialmente en 2012 a trabajar como programador, pero os dejo mis 3 ultimos puestos de
+                        trabajo para no hacer esta sección demasiado aburrida, ordenados de más recientes a más lejanos
+                        en el tiempo:
 
                         <div className={"job-list-container"}>
                             <div className={"job-list"}>
-                                <div className={"job"}>
-                                    <h3>Desarrollador Wordpress Junior</h3>
-                                    <h5>¿Dónde? - <strong>Canales corporativos</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2011/03 a 2011/06</strong></h5>
-                                    <p>Fué mi primer puesto en prácticas y durante el tiempo que trabajé para Canales
-                                        corporativos, estuve en cargado de realizar correcciones de maquetación e
-                                        incluso llegué a desarrollar una web desde 0 en Wordpress para un cliente
-                                        corporativo</p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
+
 
                                 <div className={"job"}>
-                                    <h3>Desarrollador Web multipropósito</h3>
-                                    <h5>¿Dónde? - <strong>Autónomo Freelance</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2011/06 a 2013/03</strong></h5>
+                                    <h3>Head of developer + NodeJS Full-Stack developer</h3>
+                                    <h5>¿Dónde? - <strong>Línea Gráfica ECE</strong></h5>
+                                    <h5>¿Cuándo? - <strong>Desde 2021/01</strong></h5>
                                     <p>
-                                        Durante este tiempo me dediqué a mejorar mis habilidades y profundizar en el CMS
-                                        wordpress y construí varias páginas web basadas en esta tecnología, sobretodo
-                                        centrándome producir sitios web full-responsive sin JS
+                                        Comencé como desarrollador e-commerce basado en PrestaShop y pronto me convertí
+                                        en una pieza clave de la empresa gracias al esfuerzo y la dedicación puestos en
+                                        mi constante mejora de conocimeinto y actitudes.
+                                        <br/><br/> en Línea Gráfica he desarrollado multitud de roles, algunos
+                                        relacionados con la gestión.
+                                        <br/>Actualmente me encuentro como desarrollador principal de Apps, desarrollos
+                                        a medida y plantillas en NodeJS / ReactJS en el nuevo
+                                        rumbo de la empresa, la cual viró hacia <strong>Shopify</strong> y su ecosistema
+                                        a finales de
+                                        2022
                                     </p>
                                 </div>
                                 <div className={"job-separetor-container"}>
                                     <span className={"job-separetor"}>&nbsp;</span>
                                 </div>
 
-                                <div className={"job"}>
-                                    <h3>Desarrollador e-commerce</h3>
-                                    <h5>¿Dónde? - <strong>Carlotta Digital</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2013/04 a 2013/09</strong></h5>
-                                    <p>
-                                        Mis segundas prácticas del ciclo formativo de grado superior, empresa en la que
-                                        posteriormente me quedé trabajando ya que cumplí con todas las expectativas de
-                                        la dirección.
-                                        Mi trabajo se basaba en crear sitios web corporativos en Wordpress y también
-                                        modificar y asistir al desarrollador senior en las tiendas online construidas en
-                                        Prestashop
-                                    </p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
-
-                                <div className={"job"}>
-                                    <h3>CEO & Co-founder</h3>
-                                    <h5>¿Dónde? - <strong>TIE Studios / B&D Desarrollo empresarial</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2013/10 a 2015/07</strong></h5>
-                                    <p>
-                                        Abrí el estudio de programación TIE Studios junto a dos socios para intentar
-                                        abrirnos paso en el mercado del desarrollo web corporativo y e-commerce, en esta
-                                        ocasión también probamos suerte en el creciente mundo
-                                        del desarrollo de <strong>aplicaciones móviles</strong> en aquel entonces, para
-                                        lograr un desarrollo económico y multiplataforma
-                                        usábamos <strong>phonegap</strong> como motor de ejecución y un desarrollo 100%
-                                        propio.
-                                        <br/>
-                                        <br/>
-                                        Posteriormente el estudio se convirtió en la SL Business & Development
-                                        Desarrollo empresarial SL, de la cual fuí socio fundador, trabajé en ella hasta
-                                        que la vendí en 2015 por querer cambiar de dirección mi carrera
-                                    </p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
-
-                                <div className={"job"}>
-                                    <h3>CTO</h3>
-                                    <h5>¿Dónde? - <strong>Inforfenix</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2015/08 a 2017/03</strong></h5>
-                                    <p>
-                                        Como CTO y programador principal en Inforfenix, me encargaba de administrar la
-                                        infraestructura tecnológica de la empresa y de ser el desarrollador y creador
-                                        del
-                                        sistema de gestión de academias <strong>Academy Control</strong> un software de
-                                        gestión integral para centros formativos
-                                    </p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
-
-                                <div className={"job"}>
-                                    <h3>CEO</h3>
-                                    <h5>¿Dónde? - <strong>Digital Bamboo</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2017/03 a 2017/10</strong></h5>
-                                    <p>
-                                        Abrí Digital Bamboo para intentar crear una agencia de desarrollo de
-                                        aplicaciones multiplataforma, basadas en Ionic Framework + Angular, durante este
-                                        tiempo lanzamos más de 5 aplicaciones que, lamentablemente a día de hoy no
-                                        siguen en línea, pero me permitió formarme en profundidad en el mundo del
-                                        desarrollo multiplataforma móvil
-                                    </p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
-
-                                <div className={"job"}>
-                                    <h3>CTO</h3>
-                                    <h5>¿Dónde? - <strong>Explora Marketing</strong></h5>
-                                    <h5>¿Cuándo? - <strong>2017/10 a 2019/10</strong></h5>
-                                    <p>
-                                        Tras cerrar Digial Bamboo, en búsqueda de un trabajo más estable y alejado del
-                                        múndo del <strong>autónomo</strong> comencé como desarrollador / CTO en Explora
-                                        Marketing.
-                                        Lugar en el que desarrollé diversas soluciones de software, como aplicaciones de
-                                        gestión (ERP Personalizado basado en Kotlin y Angular) como apps móviles para
-                                        Smart (Mercedes Benz) y otros desarrollos para Estrella Galicia
-                                    </p>
-                                </div>
-                                <div className={"job-separetor-container"}>
-                                    <span className={"job-separetor"}>&nbsp;</span>
-                                </div>
 
                                 <div className={"job"}>
                                     <h3>E-commerce developer</h3>
@@ -239,21 +216,18 @@ export default function Home() {
                                     <span className={"job-separetor"}>&nbsp;</span>
                                 </div>
 
+
                                 <div className={"job"}>
-                                    <h3>Head of developer + NodeJS Full-Stack developer</h3>
-                                    <h5>¿Dónde? - <strong>Línea Gráfica ECE</strong></h5>
-                                    <h5>¿Cuándo? - <strong>Desde 2021/01</strong></h5>
+                                    <h3>CTO</h3>
+                                    <h5>¿Dónde? - <strong>Explora Marketing</strong></h5>
+                                    <h5>¿Cuándo? - <strong>2017/10 a 2019/10</strong></h5>
                                     <p>
-                                        Comencé como desarrollador e-commerce basado en PrestaShop y pronto me convertí
-                                        en una pieza clave de la empresa gracias al esfuerzo y la dedicación puestos en
-                                        mi constante mejora de conocimeinto y actitudes.
-                                        <br/><br/> en Línea Gráfica he desarrollado multitud de roles, algunos
-                                        relacionados con la gestión.
-                                        <br/>Actualmente me encuentro como desarrollador principal de Apps, desarrollos
-                                        a medida y plantillas en NodeJS / ReactJS en el nuevo
-                                        rumbo de la empresa, la cual viró hacia <strong>Shopify</strong> y su ecosistema
-                                        a finales de
-                                        2022
+                                        Tras cerrar Digial Bamboo, en búsqueda de un trabajo más estable y alejado del
+                                        múndo del <strong>autónomo</strong> comencé como desarrollador / CTO en Explora
+                                        Marketing.
+                                        Lugar en el que desarrollé diversas soluciones de software, como aplicaciones de
+                                        gestión (ERP Personalizado basado en Kotlin y Angular) como apps móviles para
+                                        Smart (Mercedes Benz) y otros desarrollos para Estrella Galicia
                                     </p>
                                 </div>
                             </div>

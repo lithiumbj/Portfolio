@@ -144,7 +144,75 @@ h1 {
     fill: #000;
 }
 
+.section.section-2,
+.section.section-4 {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: calc(33% - 27px);
+    min-height: 150px;
+    padding: 15px 15px;
+}
+
+.inner-project {
+    border: 1px solid #fff;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-height: 150px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.project-picture {
+    width: calc(100% + 40px);
+    height: 130px;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.project-excerpt {
+    margin-bottom: 5px;
+}
+
+.project-excerpt hr {
+    margin-top: 15px;
+}
+
+.project-excerpt a {
+    color: black;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 17px;
+}
+
+@media (max-width: 1050px) {
+    .project {
+        width: calc(50% - 31px)
+    }
+}
+
 @media (max-width: 767px) {
+    .project {
+        width: 100%;
+    }
+
+    .project-picture {
+        height: 250px;
+    }
+
     .row {
         flex-direction: column;
     }
@@ -168,7 +236,7 @@ h1 {
     }
 
     .section.section-1 {
-       height: 100vh;
+        height: 100vh;
     }
 
     .section.section-2 {
@@ -192,5 +260,9 @@ h1 {
     .arrow-up svg {
         stroke: #fff;
         fill: #fff;
+    }
+
+    .project-excerpt a {
+        color: #fff;
     }
 }
